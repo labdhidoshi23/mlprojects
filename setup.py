@@ -1,4 +1,4 @@
-from setuptools import find_packages, setup
+from setuptools import find_packages,setup
 from typing import List
 
 CONSTANT='L'
@@ -10,6 +10,7 @@ def get_requirements(file_path:str)->List[str]:
         requirements[req.repalce("\n","") for req in requirements]
         if CONSTANT in requirements:
             requirements.remove(CONSTANT)
+    return requirements
 
 setup(
     name='mlproject',
