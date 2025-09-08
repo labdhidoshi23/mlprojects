@@ -1,1 +1,1 @@
-machine learning project
+Algorithmic Trading project
